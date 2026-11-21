@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamFlow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css" integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section class="team-map" aria-labelledby="team-title">
+        <div class="team-map__heading">
+            <p class="eyebrow">Команда вебпродукту</p>
+            <h2 id="team-title">Хто створює сайт?</h2>
+        </div>
+
+        <div class="team-grid">
+
+            <article class="team-card" data-team="design">
+                <div class="team-card__top">
+                    <span class="team-card__icon" aria-hidden="true">🎨</span>
+                    <div>
+                    <p class="team-card__direction">Design</p>
+                    <h3>UI/UX Designer</h3>
+                    </div>
+                </div>
+
+                <p>Проєктує структуру сторінки та вигляд інтерфейсу.</p>
+
+                <details>
+                    <summary>Що передає FrontEnd-розробнику?</summary>
+                    <ul>
+                    <li>макет desktop і mobile;</li>
+                    <li>кольори, шрифти та відступи;</li>
+                    <li>стани кнопок і форм.</li>
+                    </ul>
+                </details>
+                </article>
+
+            <!-- Product Manager -->
+            <article class="team-card" data-team="product">
+                <div class="team-card__top">
+                    <span class="team-card__icon">📋</span>
+                    <div>
+                        <p class="team-card__direction">Product</p>
+                        <h3>Product Manager</h3>
+                    </div>
+                </div>
+                <p>Визначає ідею та потреби користувачів.</p>
+                <details>
+                    <summary>Що передає команді?</summary>
+                    <ul>
+                        <li>ідею та потреби користувачів;</li>
+                        <li>пріоритети;</li>
+                        <li>мету продукту.</li>
+                    </ul>
+                </details>
+            </article>
+
+            <!-- Project Manager -->
+            <article class="team-card" data-team="management">
+                <div class="team-card__top">
+                    <span class="team-card__icon">📅</span>
+                    <div>
+                        <p class="team-card__direction">Management</p>
+                        <h3>Project Manager</h3>
+                    </div>
+                </div>
+                <p>Організовує роботу команди та контролює виконання завдань.</p>
+                <details>
+                    <summary>Що передає команді?</summary>
+                    <ul>
+                        <li>план і список задач;</li>
+                        <li>строки виконання;</li>
+                        <li>статуси та уточнення.</li>
+                    </ul>
+                </details>
+            </article>
+
+            <!-- FrontEnd Developer -->
+            <article class="team-card" data-team="development">
+                <div class="team-card__top">
+                    <span class="team-card__icon">💻</span>
+                    <div>
+                        <p class="team-card__direction">Development</p>
+                        <h3>FrontEnd Developer</h3>
+                    </div>
+                </div>
+                <p>Створює інтерфейс сайту за макетом дизайнера.</p>
+                <details>
+                    <summary>Що передає команді?</summary>
+                    <ul>
+                        <li>HTML/CSS-інтерфейс;</li>
+                        <li>адаптивну версію сайту;</li>
+                        <li>інтерактивні елементи.</li>
+                    </ul>
+                </details>
+            </article>
+
+            <!-- BackEnd Developer -->
+            <article class="team-card" data-team="development">
+                <div class="team-card__top">
+                    <span class="team-card__icon">⚙️</span>
+                    <div>
+                        <p class="team-card__direction">Development</p>
+                        <h3>BackEnd Developer</h3>
+                    </div>
+                </div>
+                <p>Розробляє внутрішню логіку та серверну частину продукту.</p>
+                <details>
+                    <summary>Що передає команді?</summary>
+                    <ul>
+                        <li>логіку продукту;</li>
+                        <li>дані та API;</li>
+                        <li>серверну функціональність.</li>
+                    </ul>
+                </details>
+            </article>
+
+            <!-- QA Engineer -->
+            <article class="team-card" data-team="quality">
+                <div class="team-card__top">
+                    <span class="team-card__icon">🧪</span>
+                    <div>
+                        <p class="team-card__direction">Quality</p>
+                        <h3>QA Engineer</h3>
+                    </div>
+                </div>
+                <p>Перевіряє роботу сайту та знаходить помилки.</p>
+                <details>
+                    <summary>Що передає команді?</summary>
+                    <ul>
+                        <li>готову протестовану функцію;</li>
+                        <li>Bug Report;</li>
+                        <li>результати тестування.</li>
+                    </ul>
+                </details>
+            </article>
+
+        </div>
+    </section>
+    <section class="cases-section" aria-labelledby="cases-title">
+
+        <div class="team-map__heading">
+            <p class="eyebrow">Практичні ситуації</p>
+            <h2 id="cases-title">Робочі кейси команди</h2>
+            <p>Як команда вирішує проблеми під час розробки сайту.</p>
+        </div>
+
+        <div class="case-grid">
+
+            <!-- CASE 01 -->
+            <article class="case-card">
+                <p class="case-card__id">CASE-01</p>
+
+                <h3>Кнопка виходить за межі картки</h3>
+
+                <p class="case-card__description">
+                    Після зміни розмірів екрана кнопка виходить
+                    за межі свого контейнера.
+                </p>
+
+                <ul class="role-tags" aria-label="Учасники вирішення">
+                    <li>FrontEnd</li>
+                    <li>QA</li>
+                    <li>Designer</li>
+                </ul>
+
+                <details>
+                    <summary>План команди</summary>
+                    <ol>
+                        <li>QA показує ширину екрана та кроки відтворення.</li>
+                        <li>FrontEnd перевіряє width, padding і min-width.</li>
+                        <li>Designer підтверджує поведінку довгого тексту.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <!-- CASE 02 -->
+            <article class="case-card">
+                <p class="case-card__id">CASE-02</p>
+
+                <h3>Інтерфейс неправильно відображається на телефоні</h3>
+
+                <p class="case-card__description">
+                    Частина елементів сторінки не поміщається
+                    на мобільному екрані.
+                </p>
+
+                <ul class="role-tags" aria-label="Учасники вирішення">
+                    <li>FrontEnd</li>
+                    <li>Designer</li>
+                    <li>QA</li>
+                </ul>
+
+                <details>
+                    <summary>План команди</summary>
+                    <ol>
+                        <li>QA перевіряє сторінку на різних розмірах екрана.</li>
+                        <li>Designer адаптує макет для мобільної версії.</li>
+                        <li>FrontEnd виправляє CSS та перевіряє адаптивність.</li>
+                    </ol>
+                </details>
+            </article>
+
+            <!-- CASE 03 -->
+            <article class="case-card">
+                <p class="case-card__id">CASE-03</p>
+
+                <h3>Клієнт змінив назви всіх кнопок</h3>
+
+                <p class="case-card__description">
+                    Нові назви кнопок стали довшими, тому частина
+                    тексту перестала вміщуватися.
+                </p>
+
+                <ul class="role-tags" aria-label="Учасники вирішення">
+                    <li>Product Manager</li>
+                    <li>Designer</li>
+                    <li>FrontEnd</li>
+                    <li>QA</li>
+                </ul>
+
+                <details>
+                    <summary>План команди</summary>
+                    <ol>
+                        <li>
+                            Product Manager уточнює нові назви кнопок
+                            та погоджує їх із клієнтом.
+                        </li>
+                        <li>
+                            Designer оновлює макет, перевіряє довжину
+                            тексту та розміри кнопок.
+                        </li>
+                        <li>
+                            FrontEnd адаптує CSS, а QA перевіряє
+                            всі кнопки на різних розмірах екрана.
+                        </li>
+                    </ol>
+                </details>
+            </article>
+
+        </div>
+    </section>
+</body>
+</html>
